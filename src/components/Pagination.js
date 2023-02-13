@@ -20,8 +20,8 @@ const dataT =  Object.entries(data);
    useEffect(() => {    // Get the items of other resources.
    const endOffset = itemOffset + itemsPerPage;
 
-   setCurrentitems(dataT.slice(itemOffset, endOffset));
-   setPageCount(Math.ceil(dataT.length / itemsPerPage));
+   setCurrentitems(data.slice(itemOffset, endOffset));
+   setPageCount(Math.ceil(data.length / itemsPerPage));
  });
 
  // Call user clicks to request another page.
@@ -42,7 +42,7 @@ image => {
 
 return(
 
-<p>{dataT[5].news}</p>
+<p>{image.title}</p>
 
 );
 
