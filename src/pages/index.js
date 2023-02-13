@@ -6,22 +6,6 @@ import ReactPaginate from 'react-paginate';
 
 const NextPage = ({posts}) => {
 
-const [page, setPage] = useState(0);
-
-const onClickPlus = () => {
-setPage(page + 1);
-}
-
-
-const onClickMinus = () => {
-setPage(page - 1);
-}
-
-
-useEffect(() => {
-   document.title = `Вы нажали ${page} раз`;
- });
-
 
   return (
     <>
@@ -31,7 +15,7 @@ useEffect(() => {
 
     </div>
     <div className="font-bold text-4xl ml-52 sm:ml-5 sm:font-bold md:ml-5 md:font-bold lg:ml-52 lg:font-bold xl:ml-52 xl:font-bold sm:text-3xl sm:font-bold lg:text-2xl lg:font-bold xl:text-2xl 2xl:text-4xl">
-<button onClick={onClickMinus}>Назад</button> <h5>Страница: {page}</h5> <button onClick={onClickPlus} >Вперед</button>
+
 
     </div>
 
