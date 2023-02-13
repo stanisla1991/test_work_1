@@ -23,6 +23,8 @@ const NextPage = ({posts}) => {
 
     <Blog posts={posts} />
     </div>
+
+
     </>
   );
 };
