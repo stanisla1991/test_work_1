@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Blog_item from "../components/Blog_item";
 import 'react-loading-skeleton/dist/skeleton.css';
-import SkeletonCards from "../components/SkeletonCards";
 import Skeleton from 'react-loading-skeleton'
 
 
@@ -11,8 +10,8 @@ import Skeleton from 'react-loading-skeleton'
 const Posts = ({posts, loading}) => {
   const [opn_url, setOpn_url] = useState(false);
 
-if(loading) {
-  return <p>идет загрузка....</p>
+if (loading) {
+  return <div><p>идет загрузка....</p></div>
 }
 
   return (

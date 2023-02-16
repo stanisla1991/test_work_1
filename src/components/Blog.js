@@ -1,5 +1,4 @@
 import Blog_item from "../components/Blog_item";
-import SkeletonCards from "../components/SkeletonCards";
 import 'react-loading-skeleton/dist/skeleton.css';
 import Skeleton from 'react-loading-skeleton'
 

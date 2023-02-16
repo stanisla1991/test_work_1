@@ -47,7 +47,7 @@ const handleChange = (event, value) => {
 
     <div className="flex grid-cols-1 sm:ml-3 lg:ml-52 mr-96 sm:mr-3 lg:mr-52 mb-20 gap-6 grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 grid-rows-3 place-content-center justify-self-center items-center">
 
-<Posts posts={currentPosts} loading={loading} />
+<Posts posts={currentPosts} />
 <Paginationn postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} currentPage={currentPage} />
 
     </div>
