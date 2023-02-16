@@ -6,7 +6,7 @@ const [opn_url, setOpn_url] = useState(false);
 
 return (
   <p onClick={(index) => setOpn_url(true)} className="pt-4 font-semibold text-base">
-  {ttl.substr(0, 50).replace(/\s{2,}/g, ' ') + "..."}
+  {ttl.substr(0, 40).replace(/\s{2,}/g, ' ') + "..."}
   </p>
 
 

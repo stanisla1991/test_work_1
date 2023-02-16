@@ -1,6 +1,6 @@
 import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
-const SkeletonCard = ({ posts }) => {
+const SkeletonCard = ({ countries }) => {
     return (
       <section >
 
@@ -8,7 +8,7 @@ const SkeletonCard = ({ posts }) => {
         <div className="flex grid-cols-1 2xl:grid-cols-3 grid-rows-3 place-content-center justify-self-center items-center">
           {Array(3)
             .fill()
-            .map((_, index, posts) => (
+            .map((_, index, countries) => (
               <div className=" mb-5 rounded-2xl bg-slate-50 shadow-lg" key={index}>
                 <Skeleton height={180} />
                 <h4 className="card-title">
